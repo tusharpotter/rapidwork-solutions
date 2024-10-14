@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Austrailian Dollar",
+        "code": "AUD"
+    },
+    {
+        "name": "Brazilian Real",
+        "code": "BRL"
+    },
+    {
+        "name": "Canadian Dollar",
+        "code": "CAD"
+    },
+    {
+        "name": "Czech Koruna",
+        "code": "CZK"
+    },
+    {
+        "name": "Danish Krone",
+        "code": "DKK"
+    },
+    {
+        "name": "Euro",
+        "code": "EUR"
+    },
+    {
+        "name": "Hong Kong Dollar",
+        "code": "HKD"
+    },
+    {
+        "name": "Hungarian Forint",
+        "code": "HUF"
+    },
+    {
+        "name": "Israeli New Sheqel",
+        "code": "ILS"
+    },
+    {
+        "name": "Japaneses Yen",
+        "code": "JPY"
+    },
+    {
+        "name": "Malaysian Ringgit",
+        "code": "MYR"
+    },
+    {
+        "name": "Mexican Peso",
+        "code": "MXN"
+    },
+    {
+        "name": "Norwegian Krone",
+        "code": "NOK"
+    },
+    {
+        "name": "New Zealand Dollar",
+        "code": "NZD"
+    },
+    {
+        "name": "Philippine Peso",
+        "code": "PHP"
+    },
+    {
+        "name": "Polish Zloty",
+        "code": "PLN"
+    },
+    {
+        "name": "Pound Sterling",
+        "code": "GBP"
+    },
+    {
+        "name": "Singapore Dollar",
+        "code": "SGD"
+    },
+    {
+        "name": "Swedish Krona",
+        "code": "SEK"
+    },
+    {
+        "name": "US Dollars",
+        "code": "USD"
+    }
+]

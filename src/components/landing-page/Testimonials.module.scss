@@ -1,0 +1,42 @@
+.wrapper {
+  .slide {
+    margin-bottom: 5em;
+    padding: 2em;
+    padding-top: 1em;
+    border-radius: 10px;
+    width: 21em;
+    height: 22em;
+    border: 1px solid rgba(1, 1, 1, 0.1);
+    background-color: white;
+
+    box-shadow: 1px 1px 10px rgba(1, 1, 1, 0.1);
+
+    article {
+      width: 100%;
+      height: 100%;
+      padding-top: 3em;
+      position: relative;
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+      }
+
+      .body {
+        line-height: 25px;
+        color: #545454;
+      }
+
+      .footer {
+        border-top: 1px solid rgba(1, 1, 1, 0.1);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 1em;
+        font-weight: 400;
+      }
+    }
+  }
+}

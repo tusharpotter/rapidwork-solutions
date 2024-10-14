@@ -1,0 +1,64 @@
+.wrapper {
+    margin-top: 8px;
+    margin-right: 10px;
+    position: relative;
+    svg {
+        cursor: pointer;
+    }
+    .notificationsListContainer {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 500px;
+        border: 1px solid #d6d6d6;
+        border-radius: 5px;
+        padding: 20px 0;
+        height: 350px;
+        overflow-y: auto;
+        background-color: white;
+        z-index: 5;
+        .title {
+            padding: 0 20px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .divider {
+            height: 1px;
+            width: 100%;
+            background-color: #f5f5f5;
+        }
+        .notifItem {
+            padding: 15px 20px;
+            z-index: 10;
+            cursor: pointer;
+            &:hover {
+                background-color: #f7f7f7;
+            }
+            display: flex;
+            .icon {
+                margin-right: 15px;
+            }
+            .body {
+                .text {
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                    span {
+                        display: inline;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+                }
+                .time {
+                    font-size: 12px;
+                    color: #696969;
+                }
+            }
+        }
+        .notifItem:last-child {
+            margin-bottom: 0px;
+        }
+        .unread {
+            background-color: #f7f7f7;
+        }
+    }
+}

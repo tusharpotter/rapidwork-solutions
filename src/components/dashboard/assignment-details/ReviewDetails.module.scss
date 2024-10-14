@@ -1,0 +1,87 @@
+@import "../../../utils/colors.scss";
+.wrapper {
+  margin-bottom: 50px;
+  .section {
+    margin-bottom: 20px;
+    .title {
+      width: fit-content;
+      border-radius: 5px;
+      font-size: 17px;
+      font-weight: 500;
+      color: $freelancer;
+      margin-bottom: 20px;
+    }
+    .reviews {
+      border: 1px solid #e8e8e8;
+      background-color: #fafafa;
+      padding: 20px;
+      padding-bottom: 0px;
+      border-radius: 5px;
+      min-height: 350px;
+      max-height: 450px;
+      overflow-y: auto;
+      margin-bottom: 50px;
+      .review {
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        // border-bottom: 1px solid rgba($color: #000000, $alpha: 0.05);
+        &:last-child {
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+        }
+        p {
+          &:first-child {
+            font-size: 15px;
+            margin-bottom: 5px;
+            color: #745252;
+          }
+          button {
+            color: $freelancer;
+            background-color: transparent;
+            text-decoration: underline;
+            margin-left: 10px;
+          }
+          span {
+            font-style: italic;
+          }
+        }
+        p.fileSubmission {
+          color: $freelancer;
+        }
+        .actions {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-end;
+          p {
+            text-align: right;
+            font-size: 13px;
+            color: rgba($color: #000000, $alpha: 0.6);
+          }
+        }
+      }
+    }
+  }
+}
+
+.filesModal {
+  padding: 0 20px 20px 20px;
+  p {
+    color: $link;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    &:hover {
+      text-decoration: underline;
+    }
+    span {
+      margin-right: 5px;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-left: 5px;
+    }
+  }
+}

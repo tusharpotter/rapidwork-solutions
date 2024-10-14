@@ -1,0 +1,57 @@
+.wrapper {
+  width: 1000px;
+  padding: 2em;
+  max-height: 600px;
+  overflow-y: auto;
+  z-index: 3;
+
+  .image {
+    width: 420px;
+    margin-bottom: 0em;
+    float: left;
+    padding-right: 2em;
+    border-radius: 10px;
+
+    img {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .body {
+    p:first-child {
+      margin-top: 0;
+    }
+    p {
+      margin-block: 1em;
+      color: #4a4a4a;
+      line-height: 25px;
+    }
+  }
+}
+
+.wrapper::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper {
+    .image {
+      float: unset;
+      margin: 0 auto;
+      margin-bottom: 1.5em;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 90%;
+  }
+}

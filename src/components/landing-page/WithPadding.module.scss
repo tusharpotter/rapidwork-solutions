@@ -1,0 +1,33 @@
+.wrapper {
+  padding-inline: 90px !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .wrapper {
+    padding-inline: 60px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    padding-inline: 40px !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    padding-inline: 30px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    padding-inline: 20px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .wrapper {
+    padding-inline: 15px !important;
+  }
+}

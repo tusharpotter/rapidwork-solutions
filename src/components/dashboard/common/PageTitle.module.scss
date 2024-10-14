@@ -1,0 +1,14 @@
+.wrapper {
+  width: fit-content;
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #979797;
+  display: flex;
+  padding: 5px 0px;
+  border-bottom: 1px solid #dbdbdb;
+  svg {
+    width: 20px;
+    margin-right: 10px;
+  }
+}

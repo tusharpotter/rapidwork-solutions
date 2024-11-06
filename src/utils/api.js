@@ -11,6 +11,7 @@ export const postRequest = (path, data) => {
   });
 };
 
+
 export const getRequest = (path) => {
   const authToken = localStorage.getItem("authToken");
   return axios.get(`${config.baseUrl}${path}`, {

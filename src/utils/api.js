@@ -1,9 +1,9 @@
 import axios from "axios";
-import { baseUrl } from "./config.json";
+import config from "./config.json";
 
 export const postRequest = (path, data) => {
   const authToken = localStorage.getItem("authToken");
-  return axios.post(`${baseUrl}${path}`, data, {
+  return axios.post(`${config.baseUrl}${path}`, data, {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${authToken}`,
@@ -11,9 +11,10 @@ export const postRequest = (path, data) => {
   });
 };
 
+
 export const getRequest = (path) => {
   const authToken = localStorage.getItem("authToken");
-  return axios.get(`${baseUrl}${path}`, {
+  return axios.get(`${config.baseUrl}${path}`, {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${authToken}`,
@@ -23,7 +24,7 @@ export const getRequest = (path) => {
 
 export const putRequest = (path, data) => {
   const authToken = localStorage.getItem("authToken");
-  return axios.put(`${baseUrl}${path}`, data, {
+  return axios.put(`${config.baseUrl}${path}`, data, {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${authToken}`,
@@ -36,7 +37,7 @@ export const multiGetRequest = async (paths) => {
   const authToken = localStorage.getItem("authToken");
   paths.forEach((item) => {
     arr.push(
-      axios.get(`${baseUrl}${item}`, {
+      axios.get(`${config.baseUrl}${item}`, {
         headers: {
           Authorization: `Bearer ${authToken}`,
         },
@@ -52,7 +53,7 @@ export const multiPostRequest = async (configs) => {
   const authToken = localStorage.getItem("authToken");
   configs.forEach((item) => {
     arr.push(
-      axios.post(`${baseUrl}${item.url}`, item.data, {
+      axios.post(`${config.baseUrl}${item.url}`, item.data, {
         headers: {
           Authorization: `Bearer ${authToken}`,
         },
